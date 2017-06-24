@@ -2,7 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ba-shell',
-  templateUrl: './shell.component.html',
+  template: `
+    <section>
+      <ba-main></ba-main>
+    </section>   
+  `,
   styles: []
 })
 export class ShellComponent implements OnInit {
