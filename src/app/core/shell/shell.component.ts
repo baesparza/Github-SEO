@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <section>
       <ba-main></ba-main>
+      <ba-container></ba-container>
     </section>   
   `,
   styles: []
