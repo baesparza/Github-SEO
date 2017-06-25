@@ -1,0 +1,39 @@
+<div *ngIf="info" class="img-thumbnail">
+  <img class="mx-auto d-block rounded-circle img-thumbnail" [src]="info.avatar_url" width="45%" *ngIf="info.avatar_url">
+  <div class="card-block">
+    <h1 class="text-center">{{ info.name | uppercase }}</h1>
+    <h3 class="text-center text-muted">{{ info.login }}</h3>
+    <h5 class="text-center font-italic text-muted"><small>{{ info.location }}</small></h5>
+    <br>
+    <p class="text-center">{{ info.bio }}</p>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="text-center">Email</p>
+        <p class="text-center"><a class="img-fa" [href]="info.email" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></p>
+      </div>
+      <div class="col-md-6">
+        <p class="text-center">Website</p>
+        <p class="text-center"><a class="img-fa" href="https://baesparza.github.io/Portfolio/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row justify-content-md-center">
+      <div class="col-md-3">
+        <p class="text-center"><a href="https://github.com/baesparza?tab=repositories" target="_blank">Repos</a></p>
+        <p class="text-center">{{ info.public_repos }}</p>
+      </div>
+      <div class="col-md-3">
+        <p class="text-center"><a href="https://gist.github.com/baesparza" target="_blank">Gist</a></p>
+        <p class="text-center">{{ info.following }}</p>
+      </div>
+      <div class="col-md-3">
+        <p class="text-center"><a href="https://github.com/baesparza?tab=followers" target="_blank">Followers</a></p>
+        <p class="text-center">{{ info.followers }}</p>
+      </div>
+      <div class="col-md-3">
+        <p class="text-center"><a href="https://github.com/baesparza?tab=followingl" target="_blank">Following</a></p>
+        <p class="text-center">{{ info.following }}</p>
+      </div>
+    </div>
+  </div>
+</div>
